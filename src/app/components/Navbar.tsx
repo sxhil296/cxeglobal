@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
-    <nav className="w-full top-10 fixed shadow-[0_6px_10px_-1px_rgba(0,0,0,0.1)] bg-white">
-      <div className="max-w-[1280px] flex items-center justify-between mx-auto p-4 md:p-4 lg:p-6">
+    <nav className="w-full top-10 fixed shadow-[0_6px_10px_-1px_rgba(0,0,0,0.1)] bg-white z-50">
+      <div className="max-w-[1280px] flex items-center justify-between mx-auto p-4 md:p-4 lg:px-6 ">
         {/* LOGO */}
         <div>
           <Link href={"/"}>CXE-Global</Link>
@@ -28,13 +28,13 @@ const Navbar = () => {
         </div>
 
         {/* Links and buttons (Desktop only) */}
-        <div className="hidden lg:flex space-x-6">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
+        <div className="hidden lg:flex space-x-6 ">
+          <Link href="/" className="font-medium text-[18px]">Home</Link>
+          <Link href="/about" className="font-medium text-[18px]">About</Link>
           <div className="relative">
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
-              className="flex items-center text-gray-800 hover:text-gray-600 focus:outline-none"
+              className="flex items-center text-gray-800 hover:text-gray-600 focus:outline-none font-medium text-[18px]"
             >
               Services <FaChevronDown className="ml-1" />
             </button>
@@ -72,8 +72,8 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/projects" className="font-medium text-[18px]">Projects</Link>
+          <Link href="/contact" className="font-medium text-[18px]">Contact</Link>
         </div>
 
         {/* buttons (Desktop only) */}
@@ -82,11 +82,11 @@ const Navbar = () => {
             <IoPhonePortraitSharp className="mr-3 text-xl" />
             <div className="flex flex-col text-left">
               <span className="text-xs text-gray-400">Have any Questions?</span>
-              <span className="text-sm">+91 7070707070</span>
+              <span className="text-sm font-medium">+91 7070707070</span>
             </div>
           </button>
           <Link href={"/contact"}>
-            <button className="px-6 py-2 border border-blue-400 hover:bg-blue-400 hover:text-white font-medium">
+            <button className="px-6 py-3 sm:text-[16px] border border-blue-400 hover:bg-blue-400 hover:text-white font-medium">
               Consult Now
             </button>
           </Link>
