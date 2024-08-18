@@ -9,8 +9,8 @@ const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   return (
-    <nav className="w-full top-0 fixed shadow-[0_6px_10px_-1px_rgba(0,0,0,0.1)] bg-white z-50">
-      <div className="max-w-[1280px] flex items-center justify-between mx-auto p-4 md:p-6 lg:p-8">
+    <nav className="w-full top-10 fixed shadow-[0_6px_10px_-1px_rgba(0,0,0,0.1)] bg-white">
+      <div className="max-w-[1280px] flex items-center justify-between mx-auto p-4 md:p-4 lg:p-6">
         {/* LOGO */}
         <div>
           <Link href={"/"}>CXE-Global</Link>
@@ -85,9 +85,11 @@ const Navbar = () => {
               <span className="text-sm">+91 7070707070</span>
             </div>
           </button>
-          <button className="px-6 py-2 border border-blue-400 hover:bg-blue-400 hover:text-white font-medium">
-            Consult Now
-          </button>
+          <Link href={"/contact"}>
+            <button className="px-6 py-2 border border-blue-400 hover:bg-blue-400 hover:text-white font-medium">
+              Consult Now
+            </button>
+          </Link>
         </div>
       </div>
 
