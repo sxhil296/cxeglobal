@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Companies from "./components/Companies";
+import ContactForm from "./components/ContactForm";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import TechStack from "./components/TechStack";
@@ -14,6 +15,7 @@ export default function Home() {
       <Companies/>
       <WhyCXE />
       <TechStack />
+      <ContactForm />
     </main>
   );
 }
