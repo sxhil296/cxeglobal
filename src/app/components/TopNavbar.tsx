@@ -8,7 +8,7 @@ import {
 
 const TopNavbar = () => {
   return (
-    <div className="w-full bg-blue-400 py-2 top-0 fixed">
+    <div className="w-full bg-custom-bg py-3 top-0 fixed z-50">
       <div className="max-w-[1280px] mx-auto flex justify-between items-center px-4 lg:px-8">
         {/* Moving Text */}
         <div className="hidden lg:block overflow-hidden whitespace-nowrap">
