@@ -76,18 +76,28 @@ const Hero = () => {
 
   return (
     <div className="relative w-full bg-gray-100 overflow-hidden">
-      {/* Parallax Background */}
+      {/* Parallax Background for larger screens */}
       <div
-        className="absolute inset-0 bg-fixed bg-center bg-cover"
+        className="hidden md:block absolute inset-0 bg-fixed bg-center bg-cover"
         style={{
           backgroundImage: "url('/hero-bggg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "100vh", 
+          height: "100vh",
         }}
       >
-        
-        <div className="absolute inset-0 "></div>
+        <div className="absolute inset-0"></div>
+      </div>
+
+      {/* Static Background for smaller screens */}
+      <div
+        className="block md:hidden absolute inset-0 bg-center bg-cover"
+        style={{
+          backgroundColor: '#f3f4f6',
+          height: "100vh",
+        }}
+      >
+        <div className="absolute inset-0"></div>
       </div>
 
       <div className="relative z-10 max-w-[1280px] mx-auto flex flex-col lg:flex-row-reverse items-center lg:mt-[126px] mt-[72px] lg:py-40 py-10 lg:px-8 gap-10">
@@ -137,4 +147,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 

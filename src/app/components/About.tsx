@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='w-full bg-gray-100 py-16'>
+    <div className='w-full bg-white py-16'>
       <div className='max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10'>
         {/* Text Content with Vertical Line */}
         <div className='lg:max-w-[50%] px-4 lg:px-0 relative'>

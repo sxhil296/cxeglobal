@@ -43,19 +43,30 @@ import { techServices } from "@/data";
 
 const Services = () => {
   return (
-    <div className="relative w-full bg-gray-200">
-      {/* Parallax Background */}
-      <div className="absolute inset-0 bg-fixed bg-center bg-cover"
+    <div className="relative w-full bg-gray-100">
+      {/* Parallax Background for larger screens */}
+      <div
+        className="hidden md:block absolute inset-0 bg-fixed bg-center bg-cover"
         style={{
           backgroundImage: "url('server.jpg')",
           opacity: 0.5, // Adjust opacity to your preference
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* Overlay to adjust opacity */}
         <div className="absolute inset-0 bg-black opacity-10"></div>
+      </div>
+
+      {/* Static Background for smaller screens */}
+      <div className="block md:hidden absolute inset-0 bg-center bg-cover"
+        style={{
+          backgroundColor: '#f3f4f6', // You can use a solid color or a static image for mobile
+          height: '100%',
+        }}
+      >
+        {/* Optional: you can add a light overlay or gradient here */}
       </div>
       
       {/* Content */}
@@ -92,3 +103,4 @@ const Services = () => {
 };
 
 export default Services;
+
