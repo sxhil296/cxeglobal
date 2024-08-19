@@ -124,29 +124,29 @@ export const testimonials = [
     quote:
       "Working with Sahil on our website was fantastic. His skills in React, Tailwind CSS, and JavaScript made our vision a reality. The site they built is sleek, user-friendly, and exceeded our expectations. Highly recommended for anyone seeking top-notch web development.",
     name: "HackThisFeb",
-    title: " ",
-    img: "/t1.png",
+    title: "Hackathon",
+    img: "/pfp.jpeg",
   },
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est exercitationem voluptates harum ratione officia quas laboriosam. Consequatur, error porro beatae iusto laboriosam quae minus autem officia ea. Quam nihil dolores repudiandae repellendus dolore incidunt!",
     name: "Lorem Ipsum",
     title: "Director of Lorem Ipsum",
-    img: "/profile.svg",
+    img: "/pfp.jpeg",
   },
   {
     quote:
       "Thanks to Sahil, my legal practice now has a professional and easy-to-use website. He created exactly what I needed, and I'm impressed with his skills and dedication. I highly recommend Sahil for anyone looking to improve their online presence.",
     name: "Adv. Amjad",
-    title: " ",
-    img: "/t2.png",
+    title: "Advocate",
+    img: "/pfp.jpeg",
   },
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est exercitationem voluptates harum ratione officia quas laboriosam. Consequatur, error porro beatae iusto laboriosam quae minus autem officia ea. Quam nihil dolores repudiandae repellendus dolore incidunt!",
     name: "Lorem Ipsum",
     title: "Director of Lorem Ipsum",
-    img: "/profile.svg",
+    img: "/pfp.jpeg",
   },
 ];
 

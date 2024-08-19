@@ -1,0 +1,61 @@
+"use client"
+import React, { useEffect, useRef } from "react";
+import { companies } from "@/data";
+
+const TechStack = () => {
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    if (slider) {
+      const slideWidth = slider.children[0].clientWidth + 22; // 22px is the gap between images
+      let position = 0;
+
+      const scroll = () => {
+        position -= 1; // Move the slider to the left by 1px
+        if (position <= -slideWidth) {
+          position = 0; // Reset the position to create an infinite loop effect
+          slider.appendChild(slider.children[0]); // Move the first slide to the end
+        }
+        slider.style.transform = `translateX(${position}px)`;
+      };
+
+      const interval = setInterval(scroll, 15); // Adjust the speed of scrolling by changing the interval time
+
+      return () => clearInterval(interval); // Clean up the interval on component unmount
+    }
+  }, []);
+
+  return (
+    <div className="sm:mt-40 sm:py-20">
+      <div className="max-w-[1280px] mx-auto text-center  sm:py-0 overflow-hidden px-2 sm:px-0">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase mb-4">
+          We work on different platforms & tools
+        </h2>
+        <p className="text-lg sm:text-xl text-balance capitalize">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
+          consequatur.
+        </p>
+        <div className="relative flex justify-center items-center mt-8">
+          <div className="flex gap-6" ref={sliderRef}>
+            {companies.concat(companies).map((company, index) => (
+              <div
+                key={index}
+                className="p-6 flex items-center justify-center"
+                style={{ height: "120px", width: "210px" }}
+              >
+                <img
+                  src={company.img}
+                  alt={company.name}
+                  className="object-contain h-full w-full"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TechStack;

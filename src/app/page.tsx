@@ -2,6 +2,8 @@ import About from "./components/About";
 import Companies from "./components/Companies";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import TechStack from "./components/TechStack";
+import WhyCXE from "./components/WhyCXE";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <About />
       <Services />
       <Companies/>
+      <WhyCXE />
+      <TechStack />
     </main>
   );
 }
