@@ -77,45 +77,90 @@ export const techServices: TechService[] = [
   },
 ];
 
-export const projects = [
+export interface Product {
+  title: string;
+  link: string;
+  thumbnail: string;
+}
+
+export const products: Product[] =[
   {
-    id: 1,
-    title: "Hack This Feb",
-    des: "A hackathon website created with React and TailwindCSS, providing event information and seamless participant registration.",
-    img: "/p111.png",
-    iconLists: ["/re.svg", "/tail.svg", "/javaScript.svg"],
-    link: "https://hackthisfeb.netlify.app/",
+    title: "Moonbeam",
+    link: "https://gomoonbeam.com",
+    thumbnail: "/aboutPage1.png",
   },
   {
-    id: 2,
-    title: "Advocate Portfolio",
-    des: "An advocate's portfolio built with React and TailwindCSS, showcasing legal expertise and achievements in a sleek, user-friendly design.",
-    img: "/p222.png",
-    iconLists: ["/re.svg", "/tail.svg", "/javaScript.svg"],
-    link: "https://advamjad.netlify.app/",
+    title: "Cursor",
+    link: "https://cursor.so",
+    thumbnail: "/connect.png",
   },
   {
-    id: 3,
-    title: "Quizzz",
-    des: "Quizzz is an interactive app for learning about Islam through engaging quizzes. Built with ReactJS and TailwindCSS for a fun, educational experience.",
-    img: "/p333.png",
-    iconLists: ["/re.svg", "/tail.svg", "/javaScript.svg", "/shadcn.svg"],
-    link: "https://islam-quizzz.netlify.app/",
+    title: "Rogue",
+    link: "https://userogue.com",
+    thumbnail: "/connect.png",
+  },
+
+  {
+    title: "Editorially",
+    link: "https://editorially.org",
+    thumbnail: "/aboutPage1.png",
   },
   {
-    id: 4,
-    title: "Blogosphere",
-    des: "Blogosphere is a full-stack blogging app with user authentication, post and comment management, and profile updates. Built with the MERN stack for a seamless user experience.",
-    img: "/p44.png",
-    iconLists: [
-      "/re.svg",
-      "/tail.svg",
-      "/javaScript.svg",
-      "/mongodb.svg",
-      "/nodejs.svg",
-      "/express.svg",
-    ],
-    link: "https://github.com/Sxhil296/Blogosphere",
+    title: "Editrix AI",
+    link: "https://editrix.ai",
+    thumbnail: "/connect.png",
+  },
+  {
+    title: "Pixel Perfect",
+    link: "https://app.pixelperfect.quest",
+    thumbnail: "/aboutPage1.png",
+  },
+
+  {
+    title: "Algochurn",
+    link: "https://algochurn.com",
+    thumbnail: "/aboutPage1.png",
+  },
+  {
+    title: "Aceternity UI",
+    link: "https://ui.aceternity.com",
+    thumbnail: "/aboutPage1.png",
+  },
+  {
+    title: "Tailwind Master Kit",
+    link: "https://tailwindmasterkit.com",
+    thumbnail: "/aboutPage1.png",
+  },
+  {
+    title: "SmartBridge",
+    link: "https://smartbridgetech.com",
+    thumbnail: "/hero-bggg.jpg",
+  },
+  {
+    title: "Renderwork Studio",
+    link: "https://renderwork.studio",
+    thumbnail: "/server.jpg",
+  },
+
+  {
+    title: "Creme Digital",
+    link: "https://cremedigital.com",
+    thumbnail: "/hero-bggg.jpg",
+  },
+  {
+    title: "Golden Bells Academy",
+    link: "https://goldenbellsacademy.com",
+    thumbnail: "/aboutPage1.png",
+  },
+  {
+    title: "Invoker Labs",
+    link: "https://invoker.lol",
+    thumbnail: "/hero-bggg.jpg",
+  },
+  {
+    title: "E Free Invoice",
+    link: "https://efreeinvoice.com",
+    thumbnail: "/aboutPage1.png",
   },
 ];
 
