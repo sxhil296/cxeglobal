@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 const Companies = () => {
   return (
-    <div className="w-full bg-white flex flex-col justify-center items-center sm:py-20 py-10 mb-8">
+    <div className="w-full bg-white flex flex-col justify-center items-center  py-10 mb-8">
       <div className="max-w-[1280px] mx-auto text-center px-4">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-6">
           Our Business Partners
@@ -22,7 +22,7 @@ const Companies = () => {
               <img
                 src={company.img}
                 alt={company.name}
-                className="object-contain h-[60%] w-full"
+                className="object-contain h-full w-full"
               />
             </div>
           ))}

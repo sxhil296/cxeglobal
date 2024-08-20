@@ -3,7 +3,7 @@ import { FaClock, FaCogs, FaAws } from 'react-icons/fa';
 
 const WhyCXE = () => {
   return (
-    <div className="w-full relative ">
+    <div className="w-full relative sm:mb-40 ">
       {/* Colored Background Section with Background Image and Opacity */}
       <div className="relative w-full py-[100px] bg-custom-bg">
         {/* Background Image with Opacity (Hidden on Small Screens) */}

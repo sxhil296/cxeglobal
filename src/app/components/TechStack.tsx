@@ -27,7 +27,7 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="sm:mt-40 sm:py-20">
+    <div className=" sm:py-20">
       <div className="max-w-[1280px] mx-auto text-center  sm:py-0 overflow-hidden px-2 sm:px-0">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase mb-4">
           We work on different platforms & tools

@@ -33,7 +33,8 @@ const Navbar = () => {
         {/* Links and buttons (Desktop only) */}
         <div className="hidden lg:flex space-x-6 ">
           <Link href="/" className="font-medium text-[18px]">Home</Link>
-          <Link href="/about" className="font-medium text-[18px]">About</Link>
+          <Link href="/about" className="font-medium text-[18px]">About Us</Link>
+          <Link href="/whatwedo" className="font-medium text-[18px]">What We Do</Link>
           <div className="relative">
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -74,7 +75,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
           <Link href="/projects" className="font-medium text-[18px]">Projects</Link>
           <Link href="/contact" className="font-medium text-[18px]">Contact</Link>
         </div>
