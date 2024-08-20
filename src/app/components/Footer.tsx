@@ -13,7 +13,7 @@ const Footer = () => {
               <img src="/logo.png" alt="logo" width={100} />
             </div>
             <p className="text-gray-400">
-            We value trust, transparency, collaboration, and flexibility. 'Customer Success' is our driving philosophy.
+            We value trust, transparency, collaboration, and flexibility. &apos;Customer Success&apos; is our driving philosophy.
             </p>
           </div>
           {/* Section 2 */}

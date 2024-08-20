@@ -17,13 +17,13 @@ const About = () => {
               About CXE-Global
             </h1>
             <p className='text-base sm:text-lg lg:text-xl text-gray-600 mb-4'>
-            We drive business success through a mix of traditional and innovative methods, rooted in trust, transparency, and collaboration. 'Customer Success' is at the heart of everything we do.
+            We drive business success through a mix of traditional and innovative methods, rooted in trust, transparency, and collaboration. &apos;Customer Success&apos; is at the heart of everything we do.
             </p>
             <p className='text-base sm:text-lg lg:text-xl text-gray-600 mb-6'>
             By partnering with both Business and IT teams, we help clients achieve their goals while adding value to their operations and enhancing customer experiences. Our commitment is to be a dependable ally, guiding our clients through challenges and opportunities alike. 
             </p>
             <b className='text-base sm:text-lg lg:text-xl text-gray-800'>
-            We focus on delivering tailored solutions that empower our clients to thrive in today’s dynamic business landscape, ensuring sustainable growth and long-term success.
+            We focus on delivering tailored solutions that empower our clients to thrive in today&apos;s dynamic business landscape, ensuring sustainable growth and long-term success.
             </b>
             <div className='mt-6'>
               <Link href='/about'>

@@ -26,7 +26,7 @@ const ContactForm = () => {
         <div className="w-full sm:w-1/2  sm:p-8">
           <h2 className="text-3xl font-normal mb-4">Talk to Us!</h2>
           <p className="mb-6 text-gray-600 text-balance">
-            We’d love to discuss your project or world-beating idea with you.
+            We&apos;d love to discuss your project or world-beating idea with you.
             Alternatively, send through a request for a quotation, enquiry.
           </p>
 
