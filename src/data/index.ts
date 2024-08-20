@@ -246,6 +246,52 @@ export const techStack = [
   },
 ];
 
+export interface Service {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  reverse: boolean;
+}
+
+export const servicesData: Service[] = [
+  {
+    id: 1,
+    title: "Consulting",
+    description: `CXE has spearheaded and overseen numerous digital transformation
+                  endeavors for organizations of all sizes. In today&apos;s technology
+                  landscape, every platform and software should be meticulously
+                  crafted to seamlessly align with industry best practices. However,
+                  making the right choice among available solutions based on
+                  business requirements, priorities, processes, and budget is a
+                  crucial decision.`,
+    image: "/consulting.jpeg",
+    reverse: false,
+  },
+  {
+    id: 2,
+    title: "Application Transformation",
+    description: `With our deep expertise in leading business platforms like
+                  NetSuite, Odoo, and SAP, we seamlessly support your organization
+                  and its customers. Project Planning and Management Design,
+                  Implementation, Development and Test Application Management
+                  Upgrade`,
+    image: "/aaptrans.jpeg",
+    reverse: true,
+  },
+  {
+    id: 3,
+    title: "Experience Transformation",
+    description: `Our customer experience strategy is comprehensive and tailored for success. 
+                  Embrace agility and drive profitability through our digital commerce solutions, 
+                  crafted to deliver a seamless omnichannel experience leveraging premier 
+                  business platforms such as Adobe Magento, Hybris/CX, and Shopify.`,
+    image: "/exptrans.jpg",
+    reverse: false,
+  },
+];
+
+
 export const workExperience = [
   {
     id: 1,
