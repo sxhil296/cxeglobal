@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from "react";
-import { companies } from "@/data";
+import { techStack } from "@/data";
 
 const TechStack = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -33,21 +33,20 @@ const TechStack = () => {
           We work on different platforms & tools
         </h2>
         <p className="text-lg sm:text-xl text-balance capitalize">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
-          consequatur.
+        Our diverse tech stack powers innovative solutions, tailored to meet your unique business needs. From front-end to back-end, we leverage cutting-edge tools to drive efficiency and growth.
         </p>
         <div className="relative flex justify-center items-center mt-8">
           <div className="flex gap-6" ref={sliderRef}>
-            {companies.concat(companies).map((company, index) => (
+            {techStack.concat(techStack).map((tech, index) => (
               <div
                 key={index}
                 className="p-6 flex items-center justify-center"
                 style={{ height: "120px", width: "210px" }}
               >
                 <img
-                  src={company.img}
-                  alt={company.name}
-                  className="object-contain h-full w-full"
+                  src={tech.img}
+                  alt={tech.name}
+                  className="object-contain h-full w-full bg-blend-*"
                 />
               </div>
             ))}

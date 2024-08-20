@@ -199,6 +199,53 @@ export const companies = [
   },
 ];
 
+export const techStack = [
+  {
+    id: 1,
+
+    img: "/awss.png",
+    name: "aws",
+  },
+  {
+    id: 2,
+
+    img: "/phpp.png",
+    name: "php",
+  },
+  {
+    id: 3,
+
+    img: "/mongo.png",
+    name: "mongodb",
+  },
+  {
+    id: 4,
+    img: "/bi.png",
+    name: "powerbi",
+  },
+  {
+    id: 5,
+    img: "/tensorflow.png",
+    name: "tensorflow",
+  },
+  {
+    id: 6,
+
+    img: "/python.png",
+    name: "python",
+  },
+  {
+    id: 7,
+    img: "/kafka.png",
+    name: "kafka",
+  },
+  {
+    id: 8,
+    img: "/mysql.png",
+    name: "mysql",
+  },
+];
+
 export const workExperience = [
   {
     id: 1,

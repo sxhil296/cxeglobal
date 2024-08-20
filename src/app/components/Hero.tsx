@@ -70,6 +70,7 @@ import Link from "next/link";
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -119,7 +120,7 @@ const Hero = () => {
         {/* Text Content */}
         <div className="text-center lg:text-left lg:max-w-[50%] px-4 lg:px-0">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-400 mb-2 leading-tight">
-            CXE-Global
+            <img src="/logo.png" alt="logo" width={110} />
           </h1>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 leading-tight">
             Digital Transformation Services for All Business Sizes
@@ -130,12 +131,11 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2 mt-6 items-center">
             <Link href="/contact">
-              <button className="sm:px-6 px-[28px] py-3 md:px-8 md:py-4 md:text-xl border text-white border-blue-400 hover:bg-white bg-blue-400 hover:text-blue-400 font-medium">
-                Consult Now
-              </button>
+              
+              <MagicButton title={"Consult Now"} otherClasses={'sm:px-6 px-[28px] py-2 md:px-8 md:py-4 md:text-xl hover:bg-white hover:text-black text-white'}/>
             </Link>
             <Link href="/services">
-              <button className="px-6 py-3 md:px-8 md:py-4 md:text-xl border border-black hover:bg-black hover:text-white font-medium">
+              <button className="px-6 py-2 md:px-8 md:py-4 md:text-xl border-2 border-black hover:bg-black hover:text-white font-medium">
                 View Services
               </button>
             </Link>

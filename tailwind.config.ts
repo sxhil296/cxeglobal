@@ -36,20 +36,24 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
-    // rest of the code
     extend: {
       backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                  "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         
-                "custom-bg": "linear-gradient(to top left, #3b82f6, #6366f1, #8b5cf6)",
+                "custom-bg": "linear-gradient(to top, #99509f,  #303086)",
               },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",

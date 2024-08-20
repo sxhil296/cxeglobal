@@ -6,13 +6,11 @@ const Companies = () => {
   return (
     <div className="w-full bg-white flex flex-col justify-center items-center sm:py-20 py-10 mb-8">
       <div className="max-w-[1280px] mx-auto text-center px-4">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-8">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-6">
           Our Business Partners
         </h1>
         <p className="text-gray-600  mb-12 text-xl leading-relaxed text-balance">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae at
-          quae consequatur tenetur illo, eligendi eveniet deleniti perferendis,
-          inventore quibusdam aut porro tempore.
+        Our business partners are integral to our success, helping us deliver innovative solutions and exceptional value to our clients. Together, we collaborate to achieve shared goals, drive growth, and create meaningful impact across industries.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 sm:gap-7 sm:mb-6">

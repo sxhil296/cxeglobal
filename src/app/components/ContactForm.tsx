@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import ReactFlagsSelect from "react-flags-select";
+import MagicButton from "./ui/MagicButton";
 
 const ContactForm = () => {
   const [selectedCountry, setSelectedCountry] = useState("IN");
   return (
-    <div className="p-10 sm:p-20 bg-gray-100">
+    <div className="p-6 sm:p-20 bg-gray-100">
       <div className="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-stretch justify-center gap-10 ">
         {/* Map Section */}
-        <div className="w-full sm:w-1/2 p-1 sm:p-8">
+        <div className="w-full sm:w-1/2  sm:p-8">
           <div className="h-64 sm:h-full">
             <iframe
               title="Google Map"
@@ -22,7 +23,7 @@ const ContactForm = () => {
           </div>
         </div>
 
-        <div className="w-full sm:w-1/2 p-1 sm:p-8">
+        <div className="w-full sm:w-1/2  sm:p-8">
           <h2 className="text-3xl font-normal mb-4">Talk to Us!</h2>
           <p className="mb-6 text-gray-600 text-balance">
             We’d love to discuss your project or world-beating idea with you.
@@ -91,12 +92,13 @@ const ContactForm = () => {
                 ></textarea>
               </div>
 
-              <button
+              {/* <button
                 type="submit"
                 className="mt-4 bg-custom-bg text-white py-3 px-6 transition-colors duration-200 w-full sm:max-w-[30%] text-xl text-center"
               >
                 Submit
-              </button>
+              </button> */}
+            <MagicButton title={"Submit"} otherClasses={'sm:px-6 px-[28px] py-2 md:px-8 md:py-4 md:text-xl hover:bg-white hover:text-black text-white' }/>
             </div>
           </form>
         </div>

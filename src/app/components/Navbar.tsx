@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import { IoPhonePortraitSharp } from "react-icons/io5";
+import MagicButton from "./ui/MagicButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,9 @@ const Navbar = () => {
       <div className="max-w-[1280px] flex items-center justify-between mx-auto p-4 md:p-4 lg:px-6 ">
         {/* LOGO */}
         <div>
-          <Link href={"/"}>CXE-Global</Link>
+          <Link href={"/"}>
+            <img src="/logo.png" alt="cxe-global-logo" width={100} />
+          </Link>
         </div>
 
         {/* Hamburger Icon (Mobile & Tablet only) */}
@@ -85,10 +88,8 @@ const Navbar = () => {
               <span className="text-sm font-medium">+91 7070707070</span>
             </div>
           </button>
-          <Link href={"/contact"}>
-            <button className="px-6 py-3 sm:text-[16px] border border-blue-400 hover:bg-blue-400 hover:text-white font-medium">
-              Consult Now
-            </button>
+          <Link href={"/contact"} className="mt-1">
+            <MagicButton title={"Consult Now"} otherClasses={'bg-white hover:text-white hover:bg-transparent text-black '}/>
           </Link>
         </div>
       </div>

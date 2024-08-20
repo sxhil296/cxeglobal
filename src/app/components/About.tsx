@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import MagicButton from './ui/MagicButton';
 
 const About = () => {
   return (
@@ -16,19 +17,17 @@ const About = () => {
               About CXE-Global
             </h1>
             <p className='text-base sm:text-lg lg:text-xl text-gray-600 mb-4'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam ex quam est aspernatur corrupti in provident ut dicta ad. Consequatur rerum quos sequi voluptatem debitis sed consectetur illo a fuga?
+            We drive business success through a mix of traditional and innovative methods, rooted in trust, transparency, and collaboration. 'Customer Success' is at the heart of everything we do.
             </p>
             <p className='text-base sm:text-lg lg:text-xl text-gray-600 mb-6'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae facilis, impedit molestias sint error! Iste porro mollitia vitae quia et sunt, sit voluptate delectus magnam veritatis, pariatur voluptas tenetur sequi optio possimus laudantium libero repellat quasi dolor asperiores atque.
+            By partnering with both Business and IT teams, we help clients achieve their goals while adding value to their operations and enhancing customer experiences. Our commitment is to be a dependable ally, guiding our clients through challenges and opportunities alike. 
             </p>
             <b className='text-base sm:text-lg lg:text-xl text-gray-800'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, doloribus!
+            We focus on delivering tailored solutions that empower our clients to thrive in today’s dynamic business landscape, ensuring sustainable growth and long-term success.
             </b>
             <div className='mt-6'>
               <Link href='/about'>
-                <button className="sm:px-6 px-[28px] py-3 md:px-8 md:py-4 md:text-xl border text-white border-blue-400 hover:bg-white bg-blue-400 hover:text-blue-400 font-medium">
-                  More About Us
-                </button>
+              <MagicButton title={"Consult Now"} otherClasses={'sm:px-6 px-[28px] py-2 md:px-8 md:py-4 md:text-xl hover:bg-white hover:text-black text-white'}/>
               </Link>
             </div>
           </div>

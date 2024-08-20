@@ -73,10 +73,7 @@ const Services = () => {
       <div className="relative z-10 max-w-[1280px] mx-auto text-center px-4 py-10 sm:py-20">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold py-6">Our Best Services</h1>
         <p className="text-gray-800 mb-12 text-xl leading-relaxed text-balance">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae at
-          quae consequatur tenetur illo, eligendi eveniet deleniti perferendis,
-          inventore quibusdam aut porro tempore. Ea veritatis corrupti
-          praesentium ipsam.
+        Our comprehensive services are designed to drive your business forward. From web development to digital marketing, we deliver tailored solutions to meet your goals.
         </p>
         {/* Service Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
