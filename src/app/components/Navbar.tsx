@@ -32,9 +32,15 @@ const Navbar = () => {
 
         {/* Links and buttons (Desktop only) */}
         <div className="hidden lg:flex space-x-6 ">
-          <Link href="/" className="font-medium text-[18px]">Home</Link>
-          <Link href="/about" className="font-medium text-[18px]">About Us</Link>
-          <Link href="/whatwedo" className="font-medium text-[18px]">What We Do</Link>
+          <Link href="/" className="font-medium text-[18px]">
+            Home
+          </Link>
+          <Link href="/about" className="font-medium text-[18px]">
+            About Us
+          </Link>
+          <Link href="/whatwedo" className="font-medium text-[18px]">
+            What We Do
+          </Link>
           <div className="relative">
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -75,8 +81,12 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link href="/projects" className="font-medium text-[18px]">Projects</Link>
-          <Link href="/contact" className="font-medium text-[18px]">Contact</Link>
+          <Link href="/projects" className="font-medium text-[18px]">
+            Projects
+          </Link>
+          <Link href="/contact" className="font-medium text-[18px]">
+            Contact
+          </Link>
         </div>
 
         {/* buttons (Desktop only) */}
@@ -89,7 +99,12 @@ const Navbar = () => {
             </div>
           </button>
           <Link href={"/contact"} className="mt-1">
-            <MagicButton title={"Consult Now"} otherClasses={'bg-white hover:text-white hover:bg-transparent text-black '}/>
+            <MagicButton
+              title={"Consult Now"}
+              otherClasses={
+                "bg-white hover:text-white hover:bg-transparent text-black "
+              }
+            />
           </Link>
         </div>
       </div>
@@ -109,7 +124,14 @@ const Navbar = () => {
             className="block text-lg"
             onClick={() => setIsMenuOpen(false)}
           >
-            About
+            About Us
+          </Link>
+          <Link
+            href="/whatwedo"
+            className="block text-lg"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            What We Do
           </Link>
           <div className="relative">
             <button
