@@ -77,6 +77,7 @@ export const techServices: TechService[] = [
   },
 ];
 
+
 export interface Product {
   title: string;
   link: string;
@@ -189,7 +190,7 @@ export const testimonials = [
   {
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis est exercitationem voluptates harum ratione officia quas laboriosam. Consequatur, error porro beatae iusto laboriosam quae minus autem officia ea. Quam nihil dolores repudiandae repellendus dolore incidunt!",
-    name: "Lorem Ipsum",
+    name: "Lorem",
     title: "Director of Lorem Ipsum",
     img: "/pfp.jpeg",
   },
@@ -246,8 +247,12 @@ export const companies = [
 
 export const techStack = [
   {
+    id: 0,
+    img: "/linux.png",
+    name: "linux",
+  },
+  {
     id: 1,
-
     img: "/awss.png",
     name: "aws",
   },
@@ -265,13 +270,13 @@ export const techStack = [
   },
   {
     id: 4,
-    img: "/bi.png",
-    name: "powerbi",
+    img: "/android.png",
+    name: "android",
   },
   {
     id: 5,
-    img: "/tensorflow.png",
-    name: "tensorflow",
+    img: "/msoffice.png",
+    name: "msoffice",
   },
   {
     id: 6,
@@ -281,14 +286,25 @@ export const techStack = [
   },
   {
     id: 7,
-    img: "/kafka.png",
-    name: "kafka",
+    img: "/azure.png",
+    name: "azure",
   },
   {
     id: 8,
     img: "/mysql.png",
     name: "mysql",
   },
+  {
+    id: 9,
+    img: "/gce.png",
+    name: "gce",
+  },
+  {
+    id: 10,
+    img: "/postgresql.png",
+    name: "postgresql",
+  },
+  
 ];
 
 export interface Service {
@@ -337,33 +353,3 @@ export const servicesData: Service[] = [
 ];
 
 
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Developer Intern - Devopskey",
-    desc: "Assisted in the development and maintenance of web applications using HTML, CSS, JavaScript, and ReactJS.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  // {
-  //   id: 2,
-  //   title: "Mobile App Dev - JSM Tech",
-  //   desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-  //   className: "md:col-span-2", // change to md:col-span-2
-  //   thumbnail: "/exp2.svg",
-  // },
-  {
-    id: 3,
-    title: "Freelance Web Developer",
-    desc: "Designed and developed custom websites and applications for a diverse range of clients using HTML, CSS, JavaScript, and modern frameworks.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp4.svg",
-  },
-  // {
-  //   id: 4,
-  //   title: "Lead Frontend Developer",
-  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
-  //   className: "md:col-span-2",
-  //   thumbnail: "/exp3.svg",
-  // },
-];

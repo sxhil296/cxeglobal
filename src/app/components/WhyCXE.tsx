@@ -15,7 +15,7 @@ const WhyCXE = () => {
         ></div>
 
         {/* Content */}
-        <div className="relative max-w-[1280px] mx-auto text-center px-2 sm:px-0">
+        <div className="relative max-w-[1280px] mx-auto text-center px-2 sm:px-0 sm:mb-6">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">All the reasons to choose CXE-Global</h2>
           <p className="text-lg text-white max-w-3xl mx-auto">
           We&apos;re committed to delivering &apos;Value for Money&apos; by partnering with business and IT, enabling customers to focus on core responsibilities and achieve impactful results for their employees and customers

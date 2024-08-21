@@ -29,19 +29,19 @@ const TechStack = () => {
   return (
     <div className=" sm:py-20">
       <div className="max-w-[1280px] mx-auto text-center  sm:py-0 overflow-hidden px-2 sm:px-0">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold capitalize mb-4">
           We work on different platforms & tools
         </h2>
         <p className="text-lg sm:text-xl text-balance capitalize">
         Our diverse tech stack powers innovative solutions, tailored to meet your unique business needs. From front-end to back-end, we leverage cutting-edge tools to drive efficiency and growth.
         </p>
-        <div className="relative flex justify-center items-center mt-8">
+        <div className="relative flex justify-center items-center mt-4 sm:mt-8">
           <div className="flex gap-6" ref={sliderRef}>
             {techStack.concat(techStack).map((tech, index) => (
               <div
                 key={index}
-                className="p-6 flex items-center justify-center"
-                style={{ height: "120px", width: "210px" }}
+                className="p-4 flex items-center justify-center"
+                style={{ height: "140px", width: "220px" }}
               >
                 <img
                   src={tech.img}
